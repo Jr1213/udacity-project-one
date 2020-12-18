@@ -1,16 +1,34 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 100;
+    text-align: center;
+    font-size: 3rem;
+    width: 100%;
+    height: 10vh;
+    transform: translateX(-50%);
+    background-color: #eeeeee;
+cursor: pointer;
 }
 
 nav {
     width: 100%;
     border-bottom: solid 1px #333333;
     position: fixed;
-    top: 0;
+    top: 0px;
+
 }
-#nav-bar{
+
+#nav-bar {
+    top: 0px;
     background-color: #eeeeee;
     width: 100%;
     list-style: none;
@@ -18,11 +36,13 @@ nav {
     align-items: center;
     display: flex;
 }
+
 nav li {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 nav li a {
     transition: background-color .5s ease-in-out;
     padding: 15px 45px;
@@ -30,26 +50,32 @@ nav li a {
     font-size: 1.5rem;
     text-transform: capitalize;
 }
-nav li:hover a{
+
+nav li:hover a {
     background-color: cornflowerblue;
     color: #ffffff;
 }
-nav li a.active-link{
+
+nav li a.active-link {
     background-color: cornflowerblue;
 }
+
 .section:nth-child(even) .container .content {
     order: 2;
 }
-.section{
+
+.section {
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .section.active-section {
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(202, 201, 201);
 }
+
 .container {
     max-width: 70%;
     height: 70%;
@@ -59,7 +85,8 @@ nav li a.active-link{
     display: flex;
     background-color: #fff;
 }
-.container .content{
+
+.container .content {
     /* background-color: bisque; */
     width: 50%;
     display: flex;
@@ -67,7 +94,8 @@ nav li a.active-link{
     justify-content: center;
     padding: 3rem;
 }
-.container .content h3{
+
+.container .content h3 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
     margin: 0 0 1rem;
@@ -92,16 +120,46 @@ nav li a.active-link{
     cursor: pointer;
     transition: all .5s ease-in-out;
 }
-button:active{
+
+button:active {
     transform: scale(1.2);
     border: none;
 }
-.img{
+
+.img {
     background-color: salmon;
     width: 50%;
 }
 
-.img img{
+.img img {
     display: block;
     width: 100%;
+}
+
+/* responcive */
+@media(max-width : 800px) {
+    .menu {
+        display: inline-block;
+    }
+    #nav-bar{
+        top: 10vh;
+    }
+    nav ul {
+
+        flex-direction: column;
+        position: absolute;
+        top: 10vh;
+    }
+    #nav-bar.active {
+        top : -500px;
+    }
+    nav li {
+        width: 100%;
+    }
+
+    nav li a {
+        width: 100%;
+        padding: 15 0;
+        text-align: center;
+    }
 }
