@@ -56,7 +56,7 @@ function addActiveSection(section) {
 
 // observoble settion
 const options = {
-    threshold: 0.75,
+    threshold: 0.50,
 }
 const observe = new IntersectionObserver((sections) => {
     sections.forEach(section => {
