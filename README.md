@@ -1,6 +1,6 @@
 # Udacity Landing Page Project
 
-the first assngment for udacity nanodegre of web developing profisin
+the first assignment for udacity nanodegree of web developing professional
 
 # Dependencies
 
@@ -21,12 +21,12 @@ https://stackoverflow.com/questions/7084557/select-all-elements-with-data-attrib
 
 # Brief 
 
-this project include :
-1- responsive navbar appened to ul element add dynimcally new section to navbar.
-2- automactlly detect the the section in viewport and add active calss to it 
-3- responive desing using media query to work well with all devices
+this project includes:
+1- responsive navbar appened to ul element add dynamically new section to the navbar.
+2- automatically detect the section in the viewport and add active class to it 
+3- responsive design using media query to work well with all devices
 
-# How to run project
+# How to run the project
 
-1- colne this reposistory
+1- Colne this repository
 2- open the file index.html
